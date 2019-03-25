@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.arrow-kt:arrow-optics:0.9.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar:///usr/local/Cellar/gradle/5.2.1/libexec/caches/modules-2/files-2.1/io.arrow-kt/arrow-optics/0.9.1-SNAPSHOT/3d45612637970804a786e0123399b930535c155c/arrow-optics-0.9.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar:///usr/local/Cellar/gradle/5.2.1/libexec/caches/modules-2/files-2.1/io.arrow-kt/arrow-optics/0.9.1-SNAPSHOT/94fa789f9f03045c9bafecb44a4b2de94bdd9673/arrow-optics-0.9.1-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

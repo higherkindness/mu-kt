@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.arrow-kt:arrow-annotations:0.9.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar:///usr/local/Cellar/gradle/5.2.1/libexec/caches/modules-2/files-2.1/io.arrow-kt/arrow-annotations/0.9.1-SNAPSHOT/1b0e2e75c165d027260a1cf74c1617a595aae83d/arrow-annotations-0.9.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar:///usr/local/Cellar/gradle/5.2.1/libexec/caches/modules-2/files-2.1/io.arrow-kt/arrow-annotations/0.9.1-SNAPSHOT/6f434131fd9235106497f69823611c3bd368624/arrow-annotations-0.9.1-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
