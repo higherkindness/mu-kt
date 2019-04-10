@@ -1,5 +1,6 @@
 package higherkindness.mu.meta
 
+import arrow.common.utils.knownError
 import arrow.meta.ast.Modifier
 import arrow.meta.ast.Type
 import arrow.meta.encoder.MetaApi
@@ -26,16 +27,16 @@ class ServiceProcessor : MetaProcessor<service>(service::class), MetaApi {
 
 
   override fun transform(annotatedElement: AnnotatedElement): List<FileSpec.Builder> {
-    throw IllegalStateException("Boom!")
-    println("Something xzxxxxxxxx")
-    println("Something xzxxxxxxxx")
     return when (annotatedElement) {
       is AnnotatedElement.Interface -> {
         val type: Type = annotatedElement.type
         listOf(type.fileSpecBuilder())
       }
       is AnnotatedElement.Class ->
-        emptyList<FileSpec.Builder>()
+        knownError("""
+            |$this is an invalid target for @service.
+            |Generation of services is only supported for interfaces.
+            """.trimMargin())
     }
   }
 }
