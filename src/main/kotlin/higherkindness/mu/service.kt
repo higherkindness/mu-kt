@@ -4,3 +4,4 @@ package higherkindness.mu
 @Target(AnnotationTarget.CLASS)
 @MustBeDocumented
 annotation class service
+
