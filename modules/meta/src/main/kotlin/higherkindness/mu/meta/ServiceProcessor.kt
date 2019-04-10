@@ -26,7 +26,9 @@ class ServiceProcessor : MetaProcessor<service>(service::class), MetaApi {
 
 
   override fun transform(annotatedElement: AnnotatedElement): List<FileSpec.Builder> {
-    println("Something ddla")
+    throw IllegalStateException("Boom!")
+    println("Something xzxxxxxxxx")
+    println("Something xzxxxxxxxx")
     return when (annotatedElement) {
       is AnnotatedElement.Interface -> {
         val type: Type = annotatedElement.type
