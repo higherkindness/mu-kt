@@ -22,6 +22,6 @@ object models {
   data class Picture(val large: String, val medium: String, val thumbnail: String)
   data class PersonLink(val p1: Person, val p2: Person)
 
-  data class DatabaseException(val maybeCause: Option<Throwable> = None) :
-    RuntimeException(message = maybeCause.fold(ifEmpty = { None.toString() }, ifSome = { it.message }))
+  data class DatabaseException(val maybeCause: Option<Throwable> = None) : RuntimeException(maybeCause.fold({ None.toString() }, { it.message }))
+
 }
