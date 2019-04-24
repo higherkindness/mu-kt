@@ -4,9 +4,9 @@ import arrow.core.None
 import arrow.core.Option
 import arrow.core.Tuple7
 
-typealias PersonAggregation = Tuple7<Models.Person, Models.Person, Models.Person, Models.Person, MutableList<Models.Person>, MutableList<Models.Person>, List<Models.Person>>
+typealias PersonAggregation = Tuple7<models.Person, models.Person, models.Person, models.Person, MutableList<models.Person>, MutableList<models.Person>, List<models.Person>>
 
-object Models {
+object models {
 
   data class Person(
     val id: String,
@@ -23,4 +23,5 @@ object Models {
   data class PersonLink(val p1: Person, val p2: Person)
 
   data class DatabaseException(val maybeCause: Option<Throwable> = None) : RuntimeException(maybeCause.fold({ None.toString() }, { it.message }))
+
 }
